@@ -56,10 +56,6 @@ jobs:
       - name: Upload coverage to Codecov
         # finally run the tests
         run: npm test      
-      - name: Coveralls
-        uses: coverallsapp/github-action@master
-        with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
       - name: Check for duplicate code
         uses: platisd/duplicate-code-detection-tool@master
         with:
